@@ -40,13 +40,6 @@ namespace CafeApp.Pages
                                 MessageBoxButton.OK,
                                 MessageBoxImage.Information);
             }
-            else if (CmbStatus.SelectedItem == null)
-            {
-                MessageBox.Show("Выберите статус",
-                                "Уведомление",
-                                MessageBoxButton.OK,
-                                MessageBoxImage.Information);
-            }
             else if (TxbLogin.Text == null)
             {
                 MessageBox.Show("Введите логин",
@@ -77,7 +70,7 @@ namespace CafeApp.Pages
                         FullName = TxbName.Text,
                         Login = TxbLogin.Text,
                         Password = TxbPassword.Text,
-                        Status = CmbStatus.Text,
+                        Status = "Работает",
                         Role_Id = CmbRole.SelectedIndex+1
                     };
 

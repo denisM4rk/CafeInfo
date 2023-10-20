@@ -23,13 +23,6 @@
                 <TextBox Name="TxbPassword" Style="{StaticResource AuthorizationBox}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10">
-                <TextBlock Style="{StaticResource AuthorizationTextBlock}">Статус:</TextBlock>
-                <ComboBox Name="CmbStatus" Style="{StaticResource FiltrationBox}" Width="250">
-                    <ComboBoxItem>Работает</ComboBoxItem>
-                    <ComboBoxItem>Уволен</ComboBoxItem>
-                </ComboBox>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="10">
                 <TextBlock Style="{StaticResource AuthorizationTextBlock}">Роль:</TextBlock>
                 <ComboBox Name="CmbRole" Style="{StaticResource FiltrationBox}" Width="250">
                     <ComboBoxItem>Администратор</ComboBoxItem>

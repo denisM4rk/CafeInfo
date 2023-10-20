@@ -44,13 +44,6 @@ namespace CafeApp.Pages
                                 MessageBoxButton.OK,
                                 MessageBoxImage.Information);
             }
-            else if (CmbStatus.SelectedItem == null)
-            {
-                MessageBox.Show("Выберите статус",
-                                "Уведомление",
-                                MessageBoxButton.OK,
-                                MessageBoxImage.Information);
-            }
             else if (TxbCount.Text == null)
             {
                 MessageBox.Show("Введите количество людей",
