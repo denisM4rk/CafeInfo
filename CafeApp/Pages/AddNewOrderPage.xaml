@@ -19,13 +19,6 @@
                 <TextBox Name="TxbCount" Style="{StaticResource AuthorizationBox}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10">
-                <TextBlock Width="252" Style="{StaticResource AuthorizationTextBlock}">Статус:</TextBlock>
-                <ComboBox Name="CmbStatus" Style="{StaticResource FiltrationBox}" Width="250">
-                    <ComboBoxItem>Принят</ComboBoxItem>
-                    <ComboBoxItem>Оплачен</ComboBoxItem>
-                </ComboBox>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="10">
                 <TextBlock Width="252" Style="{StaticResource AuthorizationTextBlock}">Работник:</TextBlock>
                 <ComboBox Name="CmbEmployee" Style="{StaticResource FiltrationBox}" Width="250"></ComboBox>
             </StackPanel>

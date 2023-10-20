@@ -71,7 +71,7 @@ namespace CafeApp.Pages
                 {
                     Orders ordersObj = new Orders()
                     {
-                        Status = CmbStatus.Text,
+                        Status = "Принят",
                         DinnerTable = Convert.ToInt32(TxbTable.Text),
                         CountOfClients = Convert.ToInt32(TxbCount.Text),
                         User_Turn_Id = Convert.ToInt32(CmbEmployee.SelectedIndex+1)
