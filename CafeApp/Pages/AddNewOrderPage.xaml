@@ -1,0 +1,38 @@
+﻿<Page x:Class="CafeApp.Pages.AddNewOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CafeApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="Добавление нового заказа">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Width="252" Style="{StaticResource AuthorizationTextBlock}">Столик:</TextBlock>
+                <TextBox Name="TxbTable" Style="{StaticResource AuthorizationBox}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Width="auto" Style="{StaticResource AuthorizationTextBlock}">Количество клиентов:</TextBlock>
+                <TextBox Name="TxbCount" Style="{StaticResource AuthorizationBox}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Width="252" Style="{StaticResource AuthorizationTextBlock}">Статус:</TextBlock>
+                <ComboBox Name="CmbStatus" Style="{StaticResource FiltrationBox}" Width="250">
+                    <ComboBoxItem>Принят</ComboBoxItem>
+                    <ComboBoxItem>Оплачен</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Width="252" Style="{StaticResource AuthorizationTextBlock}">Работник:</TextBlock>
+                <ComboBox Name="CmbEmployee" Style="{StaticResource FiltrationBox}" Width="250"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button Width="350" Name="BtnAddOrder" Click="BtnAddOrder_Click" Style="{StaticResource Button}">Добавить заказ</Button>
+                <Button Width="350" Name="BtnBack" Click="BtnBack_Click" Style="{StaticResource Button}">Назад</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="502f4d7c8a594f04b1da247f8a22e39a" Name="Diagram1">
+        <EntityTypeShape EntityType="DbCafeModel.Dishes" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.Drinks" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.Orders" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.Orders_Dishes" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.Orders_Drinks" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.Roles" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.Turns" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.Users" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCafeModel.Users_Turns" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="DbCafeModel.FK_Orders_Dishes_Dishes" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCafeModel.FK_Orders_Drinks_Drinks" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCafeModel.FK_Orders_Dishes_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCafeModel.FK_Orders_Drinks_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCafeModel.FK_Orders_Users_Turns" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCafeModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCafeModel.FK_Users_Turns_Turns" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCafeModel.FK_Users_Turns_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

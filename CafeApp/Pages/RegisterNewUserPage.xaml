@@ -1,0 +1,44 @@
+﻿<Page x:Class="CafeApp.Pages.RegisterNewUserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CafeApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="Регистрация нового пользователя">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Style="{StaticResource AuthorizationTextBlock}">Имя:</TextBlock>
+                <TextBox Name="TxbName" Style="{StaticResource AuthorizationBox}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Style="{StaticResource AuthorizationTextBlock}">Логин:</TextBlock>
+                <TextBox Name="TxbLogin" Style="{StaticResource AuthorizationBox}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Style="{StaticResource AuthorizationTextBlock}">Пароль:</TextBlock>
+                <TextBox Name="TxbPassword" Style="{StaticResource AuthorizationBox}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Style="{StaticResource AuthorizationTextBlock}">Статус:</TextBlock>
+                <ComboBox Name="CmbStatus" Style="{StaticResource FiltrationBox}" Width="250">
+                    <ComboBoxItem>Работает</ComboBoxItem>
+                    <ComboBoxItem>Уволен</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Style="{StaticResource AuthorizationTextBlock}">Роль:</TextBlock>
+                <ComboBox Name="CmbRole" Style="{StaticResource FiltrationBox}" Width="250">
+                    <ComboBoxItem>Администратор</ComboBoxItem>
+                    <ComboBoxItem>Повар</ComboBoxItem>
+                    <ComboBoxItem>Официант</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <Button Name="BtnAddUser" Click="BtnAddUser_Click" Width="350" Style="{StaticResource Button}">Добавить пользователя</Button>
+            <Button Name="BtnBack" Width="350" Click="BtnBack_Click"  Style="{StaticResource Button}">Назад</Button>
+        </StackPanel>
+    </Grid>
+</Page>
