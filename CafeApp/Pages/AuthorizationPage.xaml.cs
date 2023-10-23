@@ -50,7 +50,7 @@ namespace CafeApp.Pages
                     switch (userObj.Role_Id)
                     {
                         case 1:
-                            MessageBox.Show("Здравствуйте, администратор " + userObj.Login,
+                            MessageBox.Show("Здравствуйте, администратор -" + userObj.FullName,
                                             "Уведомление",
                                             MessageBoxButton.OK,
                                             MessageBoxImage.Information);
@@ -60,7 +60,7 @@ namespace CafeApp.Pages
                             break;
 
                         case 2:
-                            MessageBox.Show("Здравствуйте, повар " + userObj.Login,
+                            MessageBox.Show("Здравствуйте, повар -" + userObj.FullName,
                                             "Уведомление",
                                             MessageBoxButton.OK,
                                             MessageBoxImage.Information);
@@ -70,7 +70,7 @@ namespace CafeApp.Pages
                             break;
 
                         case 3:
-                            MessageBox.Show("Здравствуйте, официант " + userObj.Login,
+                            MessageBox.Show("Здравствуйте, официант -" + userObj.FullName,
                                             "Уведомление",
                                             MessageBoxButton.OK,
                                             MessageBoxImage.Information);

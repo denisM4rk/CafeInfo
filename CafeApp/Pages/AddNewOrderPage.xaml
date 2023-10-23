@@ -14,14 +14,17 @@
                 <TextBlock Width="252" Style="{StaticResource AuthorizationTextBlock}">Столик:</TextBlock>
                 <TextBox Name="TxbTable" Style="{StaticResource AuthorizationBox}"></TextBox>
             </StackPanel>
+            
             <StackPanel Orientation="Horizontal" Margin="10">
                 <TextBlock Width="auto" Style="{StaticResource AuthorizationTextBlock}">Количество клиентов:</TextBlock>
                 <TextBox Name="TxbCount" Style="{StaticResource AuthorizationBox}"></TextBox>
             </StackPanel>
+            
             <StackPanel Orientation="Horizontal" Margin="10">
                 <TextBlock Width="252" Style="{StaticResource AuthorizationTextBlock}">Работник:</TextBlock>
                 <ComboBox Name="CmbEmployee" Style="{StaticResource FiltrationBox}" Width="250"></ComboBox>
             </StackPanel>
+            
             <StackPanel Orientation="Vertical">
                 <Button Width="350" Name="BtnAddOrder" Click="BtnAddOrder_Click" Style="{StaticResource Button}">Добавить заказ</Button>
                 <Button Width="350" Name="BtnBack" Click="BtnBack_Click" Style="{StaticResource Button}">Назад</Button>
